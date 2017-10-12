@@ -14,9 +14,10 @@ class Button extends Nanocomponent {
   }
 
   createElement (color) {
-    this.color = color
+    this.color = typeof color === 'object' ? color.color : color;
+    console.log('>> color', JSON.stringify(this.color))
     return html`
-      <button class="b ph3 pv2 input-reset ba br-pill dim grow pointer f1" onclick=${this.handleClick} style="background-color: ${color}">
+      <button class="b ph3 pv2 input-reset ba br-pill dim grow pointer f1" onclick=${this.handleClick} style="background-color: ${this.color}">
         Click Me
       </button>
     `

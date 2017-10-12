@@ -1,0 +1,21 @@
+{
+  "name": "universal-components",
+  "version": "1.0.0",
+  "description": "Nanocomponents demo showcasing universal components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "choo",
+    "nanocomponent",
+    "universal",
+    "demo"
+  ],
+  "author": "DEKA",
+  "license": "ISC",
+  "dependencies": {
+    "bel": "^5.1.3",
+    "nanocomponent": "^6.4.2"
+  }
+}

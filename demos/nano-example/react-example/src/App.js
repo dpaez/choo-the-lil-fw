@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import toReact from 'nanocomponent-adapters/react';
+import toReact from './toReact';
 import logo from './logo.svg';
 import './App.css';
-import Button from '../../choo-example/component/button';
+import { Button } from 'universal-components';
 
 const ReactButton = toReact(Button, React)
 

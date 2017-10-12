@@ -1,0 +1,28 @@
+{
+  "name": "choo-the-lil-fw",
+  "version": "1.0.0",
+  "description": "A talk about choo and why its :cool:",
+  "main": "talk.js",
+  "scripts": {
+    "start": "bankai start talk.js --open --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "presentation",
+    "choo",
+    "talk",
+    "frontend"
+  ],
+  "author": "deka",
+  "license": "ISC",
+  "dependencies": {
+    "bel": "^5.0.2",
+    "choo": "^6.0.0-4",
+    "choo-expose": "^1.3.1",
+    "choo-log": "^7.2.1",
+    "tachyons": "^4.7.4"
+  },
+  "devDependencies": {
+    "bankai": "^8.1.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "choo_demo_checkout",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bankai build index.js",
+    "inspect": "bankai inspect index.js",
+    "start": "bankai start index.js",
+    "test": "standard && test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {
+    "choo": "^6.0.0-4",
+    "choo-log": "^7.2.1",
+    "choo-service-worker": "^2.1.6",
+    "paymentfont": "^1.2.5",
+    "tachyons": "^4.7.4"
+  },
+  "devDependencies": {
+    "bankai": "^9.0.0-1",
+    "choo-devtools": "^1.4.0",
+    "standard": "^10.0.2"
+  }
+}

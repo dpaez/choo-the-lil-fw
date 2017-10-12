@@ -1,0 +1,25 @@
+{
+  "name": "nanostuff",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bankai build index.js",
+    "inspect": "bankai inspect index.js",
+    "start": "bankai start index.js",
+    "test": "standard && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {
+    "choo": "^6.0.0-4",
+    "choo-devtools": "^1.4.0",
+    "choo-log": "^7.2.1",
+    "choo-service-worker": "^2.3.0",
+    "sheetify": "^6.1.1",
+    "tachyons": "^4.8.1"
+  },
+  "devDependencies": {
+    "bankai": "^9.0.0-1",
+    "dependency-check": "^2.9.1",
+    "standard": "^10.0.3"
+  }
+}

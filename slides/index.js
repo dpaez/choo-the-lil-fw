@@ -7,7 +7,8 @@ const slides = [
     require('./04-ok'),
     require('./05-amazing'),
     require('./06-start'),
-    require('./07-look')
+    require('./07-look'),
+    require('./08-thanks')
 ];
 
 module.exports = slides.map(slide => {

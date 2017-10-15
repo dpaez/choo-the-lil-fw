@@ -8,14 +8,15 @@ const Look = state => {
                 const choo = require('choo');
 
                 const myComponent = require('./someComponent');
-
+ 
+                DEMO...
 
             </section>
         </article>
     `;
 };
 
-Look.title = "Let's get started";
+Look.title = "Demo";
 
 Look.backgroundColor = 'bg-light-gray';
 Look.color = 'near-black';

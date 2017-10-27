@@ -1,7 +1,8 @@
 const SlideShell = require('../slide');
 
 const slides = [
-    require('./01-intro'),
+    require('./00-intro'),
+    require('./01-author'),
     require('./02-why'),
     require('./03-difference'),
     require('./04-ok'),

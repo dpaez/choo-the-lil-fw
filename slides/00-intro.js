@@ -2,7 +2,7 @@ const html = require('choo/html');
 
 const Intro = state => {
     return html`
-        <h1 class='f6 f2-m f-subheadline-l fw6 tc'> Ch o  o 🚂 🚋🚋 : el pequeño framework que puede 💪 </h1>
+        <h1 class='f2-m f-subheadline-l fw6 tc'> Ch o  o 🚂 🚋🚋 : el pequeño framework que puede 💪 </h1>
     `;
 };
 

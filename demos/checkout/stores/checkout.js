@@ -5,7 +5,7 @@ function defineEvents(events){
 }
 
 function defineReducers(state, emitter){
-    emitter.on(state.events.UPDATECARD, updateInterest.bind({}, state.checkout, emitter))
+    emitter.on(state.events.UPDATECARD, (interest) => updateInterest(state.checkout, emitter, interest))
 }
 
 

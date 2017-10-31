@@ -23,6 +23,7 @@
     "tachyons": "^4.7.4"
   },
   "devDependencies": {
-    "bankai": "^8.1.1"
+    "bankai": "^8.1.1",
+    "choo-devtools": "^2.1.0"
   }
 }

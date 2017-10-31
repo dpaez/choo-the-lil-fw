@@ -16,6 +16,7 @@ const app = choo();
 if (process.env.NODE_ENV !== 'production') {
     app.use(require('choo-log')());
     app.use(require('choo-expose')());
+    app.use(require('choo-devtools')());
 }
 
 // The store
@@ -47,13 +48,16 @@ const presentationStore = (state, emitter) => {
 
     const goto = (idx) => {
         state.presentation.current = idx;
+        emitter.emit(state.events.PUSHSTATE, `/${state.presentation.current}`);
         emitter.emit('render');
     }
 }
 
 // The views
 const routeView = (state, emit) => {
-    if (state.params.slideIdx >= slides.length) return NotFoundView(state, emit);
+    state.params.slideIdx = state.params.slideIdx || 0;
+    const idx = Number(state.params.slideIdx);
+    if (Number.isNaN(idx) || idx >= slides.length) return NotFoundView(state, emit);
     state.presentation.current = Number(state.params.slideIdx) || 0;
     return slides[state.presentation.current](state, emit);
 };
@@ -62,16 +66,16 @@ const NotFoundView = (state, emit) => {
     emit(state.events.DOMTITLECHANGE, 'Not Found');
     return html`
     <body>
-        <section class='vh-100 bg-washed-blue baskerville'>
+        <section class='vh-100 dt w-100 bg-washed-blue baskerville'>
             <header class='tc ph5 lh-copy'>
                 <h1 class='f1 f-headline-l code mb3 fw9 dib tracked-tight light-purple'>404</h1>
                 <h2 class='tc f1-l fw1'>🚉  Missing train?</h2>
             </header>
             <p class='fw1 i tc mt4 mt5-l f4 f3-l'>Previous stations:</p>
-            <ul class='list tc pl0 w-100 mt5'>
+            <ul class='list tc w-100 w-50-l center mt5'>
                 ${state.presentation.slides.map((slide, idx) => {
                     return html`
-                        <li><a class='f5 f4-ns link black db pv2 ph3 hover-light-purple' href='/${idx}'>💺  ${slide.title}</a></li>
+                        <li class="dib mr2"><a class='f4 f2-ns b db pa2 link dim mid-gray hover-light-purple' href='/${idx}'> 💺  ${slide.title} </a></li>
                     `;
                 })}
             </ul>

@@ -5,6 +5,7 @@
   "main": "talk.js",
   "scripts": {
     "start": "bankai start talk.js --open --debug",
+    "build": "NODE_ENV=production bankai build talk.js --optimize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

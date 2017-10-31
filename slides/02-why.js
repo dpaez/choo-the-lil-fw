@@ -12,7 +12,7 @@ const style = css`
 const Features = state => {
     return html`
         <div>
-            <h1 class='f6 f2-m f-subheadline-l fw6 tc'>Características</h1>
+            <h1 class='f2-m f-subheadline-l fw6 tc'>Características</h1>
             <ul class='list measure-wide pa4 tl ba br3 bw3 bg-light-blue  b--light-blue shadow-2 black-80 w-100-ns w-80-m center lh-solid'>
                 <li class='pa1 lh-copy b--black-10'>
                     <b class='db f3 mb1'> ✔️ API reducida (facil de aprender):</b>

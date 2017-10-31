@@ -40,7 +40,7 @@ const Amazing = state => {
     `;
 };
 
-Amazing.title = 'What is so cool about it?';
+Amazing.title = 'The stack';
 
 Amazing.backgroundColor = style;
 Amazing.color = 'near-black';

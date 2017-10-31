@@ -3,7 +3,7 @@ const html = require('choo/html');
 const Author = state => {
     return html`
     <article class="measure-wide center" data-name="article-full-bleed-background">
-        <h1 class='f6 f2-m f-subheadline-l fw6 tc'>El autor</h1>
+        <h1 class='f2-m f-subheadline-l fw6 tc'>El autor</h1>
         <div class="vh-50 dt w-100-ns w-50-m tc bg-dark-gray white cover ba b--black bw3  center" style="background:url(https://pbs.twimg.com/profile_images/889222391007719424/VZb5oY8a_400x400.jpg) no-repeat center;">
             <div class="dtc v-mid">
               <header class="pv4 w-50 w-80-ns center">

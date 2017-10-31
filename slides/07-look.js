@@ -9,6 +9,20 @@ const style = css`
     }
 `
 
+const Notes = () => html`
+    <div>
+        <h3>Sobre los demos</h3>
+        <ul class="list">
+            <li class="f5 lh-copy bb b--white-30">
+                <span class="silver">Checkout app:</span> nos muestra choo en lo que simula ser una app mas "real" que un todo list. Puede usarse de ejemplo para ver como puede crecer una app choo.
+            </li>
+            <li class="f5 lh-copy bb b--white-30">
+                <span class="silver">Nanocomponents:</span> Explora la idea experimental de <a href="https://github.com/choojs/nanocomponent" class="link green">nanocomponents</a>. Esto es, <b>reusabilidad a nivel de componentes</b>. La demo incluye un componente de ejemplo que puede emplearse tanto en apps choo así como tambien react.
+            </li>
+        </ul>
+    </div>
+`
+
 const Look = state => {
     return html`
         <div class='mw5 mw7-ns measure-wide center pa3 ph5-ns'>
@@ -45,5 +59,6 @@ Look.title = "Demo";
 Look.centered = false;
 Look.backgroundColor = style;
 Look.color = 'near-black';
+Look.notes = Notes;
 
 module.exports = Look;

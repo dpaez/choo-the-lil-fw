@@ -41,12 +41,12 @@ const Look = state => {
                 <ul class="list pl0 code">
                     <li class="pa3 lh-copy">
                         <span class='f5 db lh-copy measure'>
-                            <a class="f4 fw6 green bg-animate link hover-bg-yellow" href="../demos/checkout/" target="_blank" rel="noopener noreferrer"> 💰 Checkout app </a>
+                            <a class="f4 fw6 green bg-animate link hover-bg-yellow" href="https://github.com/dpaez/choo-the-lil-fw/tree/master/demos/checkout" target="_blank" rel="noopener noreferrer"> 💰 Checkout app </a>
                         </span>
                     </li>
                     <li class="pa3 lh-copy">
                         <span class='f5 db lh-copy measure'>
-                            <a class="f4 fw6 green bg-animate link hover-bg-yellow" href="../demos/nano-example/" target="_blank" rel="noopener noreferrer"> 🎁  Nanocomponents: choo & react </a>
+                            <a class="f4 fw6 green bg-animate link hover-bg-yellow" href="https://github.com/dpaez/choo-the-lil-fw/tree/master/demos/nano-example" target="_blank" rel="noopener noreferrer"> 🎁  Nanocomponents: choo & react </a>
                         </span>
                     </li>
                 </ul>
